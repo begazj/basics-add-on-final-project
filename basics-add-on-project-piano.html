@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&family=Cormorant+Garamond&family=Tangerine&display=swap"
+      rel="stylesheet"
+    />
+    <title>Piano</title>
+
+    <style>
+      body {
+        background: #e2e1e6;
+      }
+      h1 {
+        font-family: "Aref Ruqaa Ink", serif;
+      }
+      h3,
+      h4,
+      p {
+        font-family: "Cormorant Garamond", serif;
+      }
+      h4 {
+        text-decoration: underline;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #d9d9d9;
+        background: #d9d9d9;
+        color: black;
+        font-size: 20px;
+        border-radius: 6px;
+        padding: 10px 15px;
+        transition: all 200ms ease-in-out;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+      footer {
+        text-align: center;
+        margin: 10px;
+      }
+      .theme-button {
+        font-size: 12px;
+        background: #d9d9d9;
+        color: black;
+        padding: 10px 12px;
+        cursor: pointer;
+      }
+      .theme-button:hover {
+        color: #d9d9d9;
+        background: #222225;
+        border: 1px solid #222225;
+      }
+      .container {
+        max-width: 600px;
+        text-align: center;
+        background: #eeebeb;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 9px 7px 7px gray;
+      }
+      .main-image {
+        border-radius: 10px;
+        transition: transform 200ms ease-in-out, filter 200ms ease-in;
+      }
+      .main-image:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+      }
+
+      .grid {
+        margin: 10px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px;
+      }
+      .grid img {
+        width: 100%;
+        border-radius: 3px;
+        object-fit: cover;
+        transition: all 200ms ease-in-out;
+      }
+      .grid img:hover {
+        transform: scale(2.2);
+      }
+      .dark {
+        background: #1e1e1e;
+        color: white;
+      }
+      .dark .container {
+        background: #353538;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-button">Change Theme</button>
+    <div class="container">
+      <h1>Piano</h1>
+
+      <img
+        src="http://www.steinwaynaples.com/wp-content/uploads/2019/08/Black-Diamond-B-black.jpg"
+        alt=""
+        class="main-image"
+      />
+
+      <h3>
+        Piano keys, much like life, need both the light and dark to create the
+        depth of beauty. So enjoy creating harmony between the two.
+      </h3>
+
+      <div class="grid">
+        <div>
+          <h4>A Major & Relative F# Minor</h4>
+          <img src="https://www.pianoscales.org/images/A.png" alt="" />
+          <p>Notes: A, B, C#, D, E, F#, G#, A</p>
+          <p>Fingering (LH): 5, 4, 3, 2, 1, 3, 2, 1</p>
+          <p>Fingering (RH): 1, 2, 3, 1, 2, 3, 4, 5</p>
+          <img src="https://www.pianoscales.org/images/Gbm.png" alt="" />
+          <p>Notes: F#, G#, A, B, C#, D, E, F#</p>
+          <p>Fingering (LH): 4, 3, 2, 1, 3, 2, 1, 4</p>
+          <p>Fingering (RH): 2, 3, 1, 2, 3, 1, 2, 3</p>
+        </div>
+        <div>
+          <h4>Ab Major & Relative F Minor</h4>
+          <img src="https://www.pianoscales.org/images/Ab.png" alt="" />
+          <p>Notes: Ab, Bb, C, C#, Eb, F, G, Ab</p>
+          <p>Fingering (LH): 3, 2, 1, 4, 3, 2, 1, 3</p>
+          <p>Fingering (RH): 3, 4, 1, 2, 3, 1, 2, 3</p>
+          <img src="https://www.pianoscales.org/images/Fm.png" alt="" />
+          <p>Notes: F, G, Ab, Bb, C, C#, Eb, F</p>
+          <p>Fingering (LH): 5, 4, 3, 2, 1, 3, 2, 1</p>
+          <p>Fingering (RH): 1, 2, 3, 4, 1, 2, 3, 4</p>
+        </div>
+        <div>
+          <h4>B Major & Relative Ab Minor</h4>
+          <img src="https://www.pianoscales.org/images/B.png" alt="" />
+          <p>Notes: B, C#, Eb, E, F#, Ab, Bb, B</p>
+          <p>Fingering (LH): 4, 3, 2, 1, 4, 3, 2, 1</p>
+          <p>Fingering (RH): 1, 2, 3, 1, 2, 3, 4, 5</p>
+          <img src="https://www.pianoscales.org/images/Abm.png" alt="" />
+          <p>Notes: Ab, Bb, B, C#, Eb, E, F#, Ab</p>
+          <p>Fingering (LH):3, 2, 1, 3, 2, 1, 3, 2</p>
+          <p>Fingering (RH): 3, 4, 1, 2, 3, 1, 2, 3</p>
+        </div>
+        <div>
+          <h4>Bb Major & Relative G Minor</h4>
+          <img src="https://www.pianoscales.org/images/Bb.png" alt="" />
+          <p>Notes: Bb, C, D, Eb, F, G, A, Bb</p>
+          <p>Fingering (LH): 3, 2, 1, 4, 3, 2, 1, 3</p>
+          <p>Fingering (RH): 4, 1, 2, 3, 1, 2, 3, 4</p>
+          <img src="https://www.pianoscales.org/images/Gm.png" alt="" />
+          <p>Notes: G, A, Bb, C, D, Eb, F, G</p>
+          <p>Fingering (LH):5, 4, 3, 2, 1, 3, 2, 1</p>
+          <p>Fingering (RH): 1, 2, 3, 1, 2, 3, 4, 5</p>
+        </div>
+        <div>
+          <h4>C Major & Relative A Minor</h4>
+          <img src="https://www.pianoscales.org/images/C.png" alt="" />
+          <p>Notes: C, D, E, F, G, A, B, C</p>
+          <p>Fingering (LH): 5, 4, 3, 2, 1, 3, 2, 1</p>
+          <p>Fingering (RH): 1, 2, 3, 1, 2, 3, 4, 5</p>
+          <img src="https://www.pianoscales.org/images/Am.png" alt="" />
+          <p>Notes: A, B, C, D, E, F, G, A</p>
+          <p>Fingering (LH): 5, 4, 3, 2, 1, 3, 2, 1</p>
+          <p>Fingering (RH): 1, 2, 3, 1, 2, 3, 4, 5</p>
+        </div>
+        <div>
+          <h4>C# Major & Relative Bb Minor</h4>
+          <img src="https://www.pianoscales.org/images/Db.png" alt="" />
+          <p>Notes: C#, Eb, F, Gb, Ab, Bb, C, C#</p>
+          <p>Fingering (LH): 3, 2, 1, 4, 3, 2, 1, 3</p>
+          <p>Fingering (RH): 2, 3, 1, 2, 3, 4, 1, 2</p>
+          <img src="https://www.pianoscales.org/images/Bbm.png" alt="" />
+          <p>Notes: Bb, C, C#, D#, F, F#, G#, Bb</p>
+          <p>Fingering (LH): 2, 1, 3, 2, 1, 4, 3, 2</p>
+          <p>Fingering (RH): 2, 1, 2, 3, 1, 2, 3, 4</p>
+        </div>
+        <div>
+          <h4>D Major & Relative B Minor</h4>
+          <img src="https://www.pianoscales.org/images/D.png" alt="" />
+          <p>Notes: D, E, F#, G, A, B, C#, D</p>
+          <p>Fingering (LH): 5, 4, 3, 2, 1, 3, 2, 1</p>
+          <p>Fingering (RH): 1, 2, 3, 1, 2, 3, 4, 5</p>
+          <img src="https://www.pianoscales.org/images/Bm.png" alt="" />
+          <p>Notes: B, C#, D, E, F#, G, A, B</p>
+          <p>Fingering (LH): 4, 3, 2, 1, 4, 3, 2, 1</p>
+          <p>Fingering (RH): 1, 2, 3, 1, 2, 3, 4, 5</p>
+        </div>
+        <div>
+          <h4>E Major & Relative C# Minor</h4>
+          <img src="https://www.pianoscales.org/images/E.png" alt="" />
+          <p>Notes: E, F#, Ab, A, B, C#, Eb, E</p>
+          <p>Fingering (LH): 5, 4, 3, 2, 1, 3, 2, 1</p>
+          <p>Fingering (RH): 1, 2, 3, 1, 2, 3, 4, 5</p>
+          <img src="https://www.pianoscales.org/images/Dbm.png" alt="" />
+          <p>Notes: C#, Eb, E, F#, Ab, A, B, C#</p>
+          <p>Fingering (LH): 3, 2, 1, 4, 3, 2, 1, 3</p>
+          <p>Fingering (RH): 3, 4, 1, 2, 3, 1, 2, 3</p>
+        </div>
+        <div>
+          <h4>Eb Major & Relative C Minor</h4>
+          <img src="https://www.pianoscales.org/images/Eb.png" alt="" />
+          <p>Notes: Eb, F, G, Ab, Bb, C, D, Eb</p>
+          <p>Fingering (LH): 3, 2, 1, 4, 3, 2, 1, 3</p>
+          <p>Fingering (RH): 3, 1, 2, 3, 4, 1, 2, 3</p>
+          <img src="https://www.pianoscales.org/images/Cm.png" alt="" />
+          <p>Notes: C, D, Eb, F, G, Ab, Bb, C</p>
+          <p>Fingering (LH): 5, 4, 3, 2, 1, 3, 2, 1</p>
+          <p>Fingering (RH): 1, 2, 3, 1, 2, 3, 4, 5</p>
+        </div>
+
+        <div>
+          <h4>F Major & Relative D Minor</h4>
+          <img src="https://www.pianoscales.org/images/F.png" alt="" />
+          <p>Notes: F, G, A, Bb, C, D, E, F</p>
+          <p>Fingering (LH): 5, 4, 3, 2, 1, 3, 2, 1</p>
+          <p>Fingering (RH): 1, 2, 3, 4, 1, 2, 3, 4</p>
+          <img src="https://www.pianoscales.org/images/Dm.png" alt="" />
+          <p>Notes: D, E, F, G, A, Bb, C, D</p>
+          <p>Fingering (LH): 5, 4, 3, 2, 1, 3, 2, 1</p>
+          <p>Fingering (RH): 1, 2, 3, 1, 2, 3, 4, 5</p>
+        </div>
+        <div>
+          <h4>F# Major & Relative Eb Minor</h4>
+          <img src="https://www.pianoscales.org/images/Gb.png" alt="" />
+          <p>Notes: F#, Ab, Bb, B, C#, Eb, F, F#</p>
+          <p>Fingering (LH): 4, 3, 2, 1, 3, 2, 1, 4</p>
+          <p>Fingering (RH): 2, 3, 4, 1, 2, 3, 1, 2</p>
+          <img src="https://www.pianoscales.org/images/Ebm.png" alt="" />
+          <p>Notes: Eb, F, F#, Ab, Bb, B, C#, Eb</p>
+          <p>Fingering (LH): 2, 1, 4, 3, 2, 1, 3, 2</p>
+          <p>Fingering (RH): 3, 1, 2, 3, 4, 1, 2, 3</p>
+        </div>
+        <div>
+          <h4>G Major & Relative E Minor</h4>
+          <img src="https://www.pianoscales.org/images/G.png" alt="" />
+          <p>Notes: G, A, B, C, D, E, F#, G</p>
+          <p>Fingering (LH): 5, 4, 3, 2, 1, 3, 2, 1</p>
+          <p>Fingering (RH): 1, 2, 3, 1, 2, 3, 4, 5</p>
+          <img src="https://www.pianoscales.org/images/Em.png" alt="" />
+          <p>Notes: E, F#, G, A, B, C, D, E</p>
+          <p>Fingering (LH): 5, 4, 3, 2, 1, 3, 2, 1</p>
+          <p>Fingering (RH): 1, 2, 3, 1, 2, 3, 4, 5</p>
+        </div>
+      </div>
+    </div>
+    <footer>Coded by Jen Begazo</footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        // body.classList.toggle("dark")
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
